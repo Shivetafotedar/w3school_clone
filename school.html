@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./school.css" />
+    <title>School</title>
+  </head>
+  <body>
+    <!---------------Head part------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand icon_style"
+          ><img
+            src="../W3_school/assets/W3Schools_logo.png"
+            width="50px"
+            height="40px"
+          />
+        </a>
+        <!----------------->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle color-tag"
+                href="#navbarDropdown"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="true"
+              >
+                <b>Tutorials</b>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle color-tag"
+                href="#navbarDropdown"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="true"
+              >
+                <b> References</b>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle color-tag"
+                href="#navbarDropdown"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="true"
+              >
+                <b>Exercises</b>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active color-tag" aria-current="page" href="#"
+                ><b>Videos</b></a
+              >
+            </li>
+          </ul>
+          <!---------------------->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand icon_style"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  fill="#000000"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M4 12c0 4.08 3.06 7.44 7 7.93V4.07C7.05 4.56 4 7.92 4 12z"
+                    opacity=".3"
+                  />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93s3.05-7.44 7-7.93v15.86zm2-15.86c1.03.13 2 .45 2.87.93H13v-.93zM13 7h5.24c.25.31.48.65.68 1H13V7zm0 3h6.74c.08.33.15.66.19 1H13v-1zm0 9.93V19h2.87c-.87.48-1.84.8-2.87.93zM18.24 17H13v-1h5.92c-.2.35-.43.69-.68 1zm1.5-3H13v-1h6.93c-.04.34-.11.67-.19 1z"
+                  />
+                </svg>
+              </a>
+              <a class="navbar-brand icon_style"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  fill="#000000"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-.61.08-1.21.21-1.78L8.99 15v1c0 1.1.9 2 2 2v1.93C7.06 19.43 4 16.07 4 12zm13.89 5.4c-.26-.81-1-1.4-1.9-1.4h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41C17.92 5.77 20 8.65 20 12c0 2.08-.81 3.98-2.11 5.4z"
+                  />
+                </svg>
+              </a>
+              <a class="navbar-brand icon_style"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  fill="#000000"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </nav>
+
+          <!-------------------->
+          <form class="d-flex">
+            <button class="btn btn-outline-success button-type1" type="submit">
+              <b>Website</b>
+            </button>
+            <button class="btn btn-outline-success button-type2" type="submit">
+              <b>Paid Courses </b>
+            </button>
+            <button class="btn btn-outline-success button-type3" type="submit">
+              <b>Log in </b>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!---------------Main part------------------->
+    <div>
+      <div class="main-container">
+        <div class="row main-row">
+          <div class="col-12">
+            <h1 class="h1_style">Learn to code</h1>
+            <h3 class="h3_style">
+              With the world's largest web developer site.
+            </h3>
+
+            <form class="form_style">
+              <input
+                type="text"
+                class="text_style"
+                placeholder="Search our tutorials,e.g,HTML"
+              />
+              <button class="button_style">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  fill="#000000"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                  />
+                </svg>
+              </button>
+            </form>
+            <div class="section-div">
+              <h4>
+                <a href="where_to_start.asp" class="text-type"
+                  >Not Sure Where To Begin?</a
+                >
+              </h4>
+            </div>
+          </div>
+        </div>
+        <!------------------Image--------------------->
+        <svg
+          style="background-color: #d9eee1"
+          width="100%"
+          height="70"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <path d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+        </svg>
+      </div>
+      <!-----------------Second Part--------->
+      <div class="second-container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 section-col1">
+              <div class="min-section">
+                <h1 class="title-html">HTML</h1>
+                <p style="font-size: 20px">
+                  The language for building web pages
+                </p>
+                <div class="contain">
+                  <a href="/html/default.asp" class="tut-button">Learn HTML</a>
+                </div>
+                <div class="contain">
+                  <a href="/html/default.asp" class="tut-button tut-color1"
+                    >Video Tutorial</a
+                  >
+                </div>
+                <div class="contain">
+                  <a href="/html/default.asp" class="tut-button tut-color-2"
+                    >HTML Reference</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 section-col2">
+              <div class="max-section">
+                <h4>HTML Example :</h4>
+                <div class="max-section1"></div>
+                <div>
+                  <a href="/html/default.asp" class="try-button"
+                    >Try it Yourself</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------Third---------->
+      <div class="third-container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 section-col1">
+              <div class="min-section">
+                <h1 class="title-html">CSS</h1>
+                <p style="font-size: 20px">
+                  The language for styling web pages
+                </p>
+                <div class="contain">
+                  <a href="/html/default.asp" class="tut-button">Learn CSS</a>
+                </div>
+                <div class="contain">
+                  <a href="/html/default.asp" class="tut-button tut-color-2"
+                    >CSS Reference</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 section-col2">
+              <div class="max-section">
+                <h4>CSS Example :</h4>
+                <div class="max-section1"></div>
+                <div>
+                  <a href="/html/default.asp" class="try-button"
+                    >Try it Yourself</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------Fourth part---------->
+      <div class="fourth-container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 section-col1">
+              <div class="min-section fourth-min-section">
+                <h1 class="title-html">JavaScript</h1>
+                <p style="font-size: 20px">
+                  The language for programming web pages
+                </p>
+                <div class="contain">
+                  <a href="/html/default.asp" class="tut-button"
+                    >Learn JavaScript</a
+                  >
+                </div>
+                <div class="contain">
+                  <a
+                    href="/html/default.asp"
+                    class="tut-button tut-color-2 tut-color-3"
+                    >JavaScript Reference</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 section-col2">
+              <div class="max-section">
+                <h4>JavaScript Example :</h4>
+                <div class="max-section1"></div>
+                <div>
+                  <a href="/html/default.asp" class="try-button"
+                    >Try it Yourself</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------Five part---------->
+      <div class="five-container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 section-col1">
+              <div class="min-section">
+                <h1 class="title-html">PYTHON</h1>
+                <p style="font-size: 20px">A popular programming language</p>
+                <div class="contain">
+                  <a href="/html/default.asp" class="tut-button"
+                    >Learn Python</a
+                  >
+                </div>
+                <div class="contain">
+                  <a
+                    href="/html/default.asp"
+                    class="tut-button tut-color-2 tut-color-4"
+                    >Python Reference</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 section-col2">
+              <div class="max-section">
+                <h4>Python Example :</h4>
+                <div class="max-section1"></div>
+                <div>
+                  <a href="/html/default.asp" class="try-button"
+                    >Try it Yourself</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------Six part---------->
+      <div class="Six-container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 section-col1">
+              <div class="min-section">
+                <h1 class="title-html">SQL</h1>
+                <p style="font-size: 20px">
+                  A language for accessing databases
+                </p>
+                <div class="contain">
+                  <a href="/html/default.asp" class="tut-button">Learn SQL</a>
+                </div>
+                <div class="contain">
+                  <a
+                    href="/html/default.asp"
+                    class="tut-button tut-color-2 tut-color-4"
+                    >SQL Reference</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 section-col2">
+              <div class="max-section">
+                <h4>SQL Example :</h4>
+                <div class="max-section1"></div>
+                <div>
+                  <a href="/html/default.asp" class="try-button"
+                    >Try it Yourself</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-----------middle Part-->
+      <div class="middle-container">
+        <div class="container-fluid">
+          <!--------Middle  PartI----->
+          <div class="row midddle-row">
+            <div class="col-6">
+              <div class="min-section section-php">
+                <h1>PHP</h1>
+                <br />
+                <p style="font-size: 20px">A web server programming language</p>
+                <div class="contain">
+                  <a href="/html/default.asp" class="php-button">Learn PHP</a>
+                </div>
+              </div>
+            </div>
+            <!--------Middle Part-II----->
+            <div class="col-6 section-col2">
+              <div class="min-section section-jQuery">
+                <h1>jQuery</h1>
+                <br />
+                <p style="font-size: 20px">
+                  A JS library for developing web pages
+                </p>
+                <div class="contain">
+                  <a href="/html/default.asp" class="jQuery-button"
+                    >Learn jQuery</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------Middle Part-III----->
+          <div class="row midddle-row">
+            <div class="col-6">
+              <div class="min-section section-java">
+                <h1>Java</h1>
+                <br />
+                <p style="font-size: 20px">A programming language</p>
+                <div class="contain">
+                  <a href="/html/default.asp" class="java-button">Learn Java</a>
+                </div>
+              </div>
+            </div>
+            <!--------Middle Part-IV----->
+            <div class="col-6 section-col2">
+              <div class="min-section section-c">
+                <h1>C++</h1>
+                <br />
+                <p style="font-size: 20px">A programming language</p>
+                <div class="contain">
+                  <a href="/html/default.asp" class="c-button">Learn C++</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------Middle Part-V----->
+          <div class="row midddle-row">
+            <div class="col-6">
+              <div class="min-section section-W3">
+                <h1 class="title-css">W3.CSS</h1>
+
+                <p style="font-size: 20px">
+                  A CSS framework for faster and better responsive web pages
+                </p>
+                <div class="contain">
+                  <a href="/html/default.asp" class="java-button"
+                    >Learn W3.CSS</a
+                  >
+                </div>
+                <div class="contain">
+                  <a href="/html/default.asp" class="bootstrap-button"
+                    >Learn BS4</a
+                  >
+                </div>
+
+                <div class="contain">
+                  <a href="/html/default.asp" class="bootstrap-button">
+                    Learn BS5</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!--------Middle Part-VI----->
+            <div class="col-6 section-col2">
+              <div class="min-section section-c">
+                <h1 class="title-css">Bootstrap</h1>
+
+                <p style="font-size: 20px">
+                  A CSS framework for designing better web pages
+                </p>
+                <div class="contain">
+                  <a href="/html/default.asp" class="c-button">Learn BS3</a>
+                </div>
+                <div class="contain">
+                  <a href="/html/default.asp" class="bootstrap-button"
+                    >Learn BS4</a
+                  >
+                </div>
+
+                <div class="contain">
+                  <a href="/html/default.asp" class="bootstrap-button">
+                    Learn BS5</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-----------down part-->
+      <div class="container-fluid">
+        <div class="row midddle-row">
+          <div class="col-3">
+            <div class="down-min-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                C#
+              </h2>
+            </div>
+          </div>
+          <!----->
+          <div class="col-3">
+            <div class="down-min-section r-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                R
+              </h2>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="down-min-section kotlin-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                Kotlin
+              </h2>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="down-min-section Mysql_section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                MySQL
+              </h2>
+            </div>
+          </div>
+          <!---------------->
+        </div>
+
+        <div class="row midddle-row">
+          <div class="col-3">
+            <div class="down-min-section NodeJS-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                NodeJS
+              </h2>
+            </div>
+          </div>
+          <!----->
+          <div class="col-3">
+            <div class="down-min-section react-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                React
+              </h2>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="down-min-section Json-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                Json
+              </h2>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="down-min-section AngularJS-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                AngularJS
+              </h2>
+            </div>
+          </div>
+          <!---------------->
+        </div>
+        <!--------------->
+        <div class="row midddle-row">
+          <div class="col-3">
+            <div class="down-min-section W3.JS-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                W3.JS
+              </h2>
+            </div>
+          </div>
+          <!----->
+          <div class="col-3">
+            <div class="down-min-section XML-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                XML
+              </h2>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="down-min-section Sass-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                Sass
+              </h2>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="down-min-section Icons-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                Icons
+              </h2>
+            </div>
+          </div>
+          <!---------------->
+        </div>
+        <!--------------->
+        <div class="row midddle-row">
+          <div class="col-3">
+            <div class="down-min-section RaspberryPi-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                RaspberryPi
+              </h2>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="down-min-section Cyber-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                Cyber
+              </h2>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="down-min-section Colors-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                Colors
+              </h2>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="down-min-section GIT-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                GIT
+              </h2>
+            </div>
+          </div>
+          <!---------------->
+        </div>
+        <!--------------->
+        <div class="row midddle-row">
+          <div class="col-3">
+            <div class="down-min-section Matplotlib-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                Matplotlib
+              </h2>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="down-min-section NumPy-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                NumPy
+              </h2>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="down-min-section Pandas-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                Pandas
+              </h2>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="down-min-section SciPy-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                SciPy
+              </h2>
+            </div>
+          </div>
+          <!---------------->
+        </div>
+        <div class="row midddle-row">
+          <div class="col-3">
+            <div class="down-min-section ASP-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                ASP
+              </h2>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="down-min-section Accessibility-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                Accessibility
+              </h2>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="down-min-section AppML-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                AppML
+              </h2>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="down-min-section Go-section">
+              <h2
+                style="
+                  font-size: 30px;
+                  font-weight: 500;
+                  text-align: center;
+                  padding: 40px;
+                "
+              >
+                Go
+              </h2>
+            </div>
+          </div>
+          <!---------------->
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
